@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4229a7500a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <title>UrCheatSheet</title>
+</head>
+<body class="body-container">
+    <div class="subject-container">
+
+        <!-- SUBJECT CONTAINER -->
+        <div class="subject-container-top">
+
+            <p class="subject-list-title">Things to Learn</p>
+
+            <div class="subject-list-container">
+                <ul>
+                    <li><a href="../arrays/array-dashboard.html">Arrays</a></li>
+                    <li><a href="#" id="active-topic">Big O <i class="fa-solid fa-angles-right"></i></a></li>
+                    <li><a href="#">Lists</a></li>
+                    <li><a href="#">Recursion</a></li>
+                    <li><a href="#">Trees</a></li>
+                    <li><a href="#">Heaps</a></li>
+                    <li><a href="#">Tries</a></li>
+                    <li><a href="#">Graphs</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Dijkstra's Shortest Path</a></li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="contribute-button">
+            <p>Contribute</p>
+            <i class="fa-brands fa-github"></i>
+        </div>
+
+    </div>
+
+    <div class="blob"></div>
+
+    <div class="content-container">
+
+        <div class="logo-container">
+            <span class="logo"><a href="../index.html">urCheatSheet
+            <i class="fa-solid fa-folder-open"></i></a></span>
+        </div>
+
+        <!-- CONTENT HERE -->
+        <div class="topic-content-container">
+            <div class="topic-title-container ">
+                <p class="topic-title">Big-O Notation</p>
+            </div>
+
+            <div class="topic-description-container">
+                <!-- <p class="topic-description"></p> -->
+            </div>
+        </div>
+
+        <div class="topic-buttons-container">
+            <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array" class="topic-button hvr-shutter-in-horizontal"><p>Documentation</p></a>
+            
+            <a onclick="dropOne()" class="topic-button hvr-shutter-in-horizontal" id="one"><p>Searching Arrays</p></a>
+            <a onclick="dropTwo()" class="topic-button hvr-shutter-in-horizontal" id="two"><p>Sorting Arrays</p></a>
+        </div>
+        
+
+        <!-- ====================================================================================== -->
+        <!-- SEARCHING ARRAYS DROPDOWN -->
+        <div class="topic-dropdown-container hidden" id="divOne">
+            <div class="topic-dropdown">
+                <div class="dropdown-tabs">
+                    <div class="dropdown-topic-tab active-tab">Linear</div>
+                    <div class="dropdown-topic-tab"></div>
+                    <div class="dropdown-topic-tab"></div>
+                    <div class="dropdown-topic-tab"></div>
+                </div>
+                <div class="dropdown-content">
+                    <p class="dropdown-topic-title">Selection Sort</p>
+                    <div class="dropdown-topic-link-container">
+                        <p class="dropdown-topic-link"><a href="#">Read Documentation</a></p>
+                        <p class="dropdown-topic-link"><a href="#">Video Explanation</a></p>
+                        <p class="dropdown-topic-link"><a href="#">View Visualizer</a></p>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fuga voluptate modi amet eos ipsam vel nostrum ducimus rem. Nobis unde pariatur sed dolorum perferendis veritatis cupiditate optio laudantium praesentium, sint repellat voluptates eaque id in non necessitatibus a? Atque voluptas repellat eaque illum explicabo vero quae alias consequuntur eveniet.</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+        <!-- ====================================================================================== -->
+        <!-- SORTING ARRAYS DROPDOWN -->
+        <div class="topic-dropdown-container hidden" id="divTwo">
+            <div class="topic-dropdown">
+                <div class="dropdown-tabs">
+                    <div class="dropdown-topic-tab active-tab">Selection</div>
+                    <div class="dropdown-topic-tab">Insertion</div>
+                    <div class="dropdown-topic-tab">Merge</div>
+                    <div class="dropdown-topic-tab">Quick</div>
+                </div>
+                <div class="dropdown-content" id="selection-sort-dropdown">
+                    <p class="dropdown-topic-title">Selection Sort</p>
+                    <div class="dropdown-topic-link-container">
+                        <a class="dropdown-topic-link" onclick="dropSelectionSort()"><p>View Algorithms</p></a>
+                        <a class="dropdown-topic-link" target="_blank" href="https://stackabuse.com/selection-sort-in-javascript/"><p>Read Documentation</p></a>
+                        <a class="dropdown-topic-link" target="_blank" href="https://www.youtube.com/watch?v=Tb47pqh5U58"><p>Video Explanation</p></a>
+                        <a class="dropdown-topic-link" target="_blank" href="https://algorithm-visualizer.org/brute-force/selection-sort"><p>View Visualizer</p></a>
+                    </div>
+
+                    <!-- Practice algo table -->
+                    <div class="dropdown-table-container hidden" id="selection-sort-table">
+                        <div class="dropdown-algo-table">
+                            <div class="table-title">Practice Algorithms</div>
+                            <div class="dropdown-inner-table">
+                                <div class="table-cell title-cell"><a href="../arrays/selection-sort-example.html">Example Algo</a></div>
+                                <div class="table-cell diff-cell">Leetcode #000</div>
+                                <div class="table-cell diff-cell">Leetcode #000</div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, fuga voluptate modi amet eos ipsam vel nostrum ducimus rem. Nobis unde pariatur sed dolorum perferendis veritatis cupiditate optio laudantium praesentium, sint repellat voluptates eaque id in non necessitatibus a? Atque voluptas repellat eaque illum explicabo vero quae alias consequuntur eveniet.</p>
+                </div>
+            </div>
+
+        </div>
+
+
+
+
+    </div>
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

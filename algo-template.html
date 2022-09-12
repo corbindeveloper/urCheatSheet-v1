@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@200;300;400;500;600;700;900&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/4229a7500a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/main.css">
+
+    <script src="../codemirror/lib/codemirror.js"></script>
+    <link rel="stylesheet" href="../codemirror/lib/codemirror.css">
+    <script src="../codemirror/mode/javascript/javascript.js"></script>
+    <script src="../codemirror/addon/edit/closetag.js"></script>
+    <script src="../codemirror/addon/edit/closebrackets.js"></script>
+    <link href="../codemirror/theme/seti.css" rel="stylesheet">
+
+    <title>UrCheatSheet</title>
+</head>
+<body class="body-container">
+    <div class="subject-container">
+
+        <!-- SUBJECT CONTAINER -->
+        <div class="subject-container-top">
+            
+
+            <p class="subject-list-title">Things to Learn</p>
+
+            <div class="subject-list-container">
+                <ul>
+                    <li><a href="#">Arrays</a></li>
+                    <li><a href="#">Big O</a></li>
+                    <li><a href="#">Lists</a></li>
+                    <li><a href="#">Recursion</a></li>
+                    <li><a href="#">Trees</a></li>
+                    <li><a href="#">Heaps</a></li>
+                    <li><a href="#">Tries</a></li>
+                    <li><a href="#">Graphs</a></li>
+                    <li><a href="#">Maps</a></li>
+                    <li><a href="#">Dijkstra's Shortest Path</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="contribute-button">
+            <p>Contribute</p>
+            <i class="fa-brands fa-github"></i>
+        </div>
+
+    </div>
+
+    <div class="blob"></div>
+
+    <div class="content-container">
+
+        <div class="logo-container">
+            <span class="logo"><a href="../index.html">urCheatSheet
+            <i class="fa-solid fa-folder-open"></i></a></span>
+        </div>
+
+        <div class="topic-content-container">
+            <div class="topic-title-container ">
+                <p class="topic-title">Algo Title Here</p>
+            </div>
+
+            <div class="topic-description-container">
+                <p class="topic-description">Basic instructions here.</p>
+            </div>
+        </div>
+
+
+<!-- For now the editor syntax can't be indented in the file -->
+<!-- Currently: the indentations will also appear within the editor -->
+<!--   CODE EDITOR (ONE)  -->
+<div class="editor-width-box">
+<div class="editor-container">
+    <textarea id="editor">
+    // Comments still work, can include various details in comments
+    var c = "Corbin";
+    var y = 23; </textarea>
+    <!-- </textarea> tag end on the same line as the last line of code or an additional blank line will be created, but do to your preference -->
+</div>
+</div>
+<!--END EDITOR -->
+
+
+    <div class="topic-buttons-container width40">      
+        <a onclick="dropOne()" class="topic-button hvr-shutter-in-horizontal" id="one"><p>Get a hint</p></a>
+        <a onclick="dropTwo()" class="topic-button hvr-shutter-in-horizontal" id="two"><p>View Our Solution</p></a>
+    </div>
+
+    <!-- If you have a hint for the problem you can place that here, otherwise just comment it out. -->
+    <div class="topic-hint-container"></div>
+
+
+
+
+    <!-- CONTENT ENDING-->
+    </div> 
+
+
+<!-- EDITOR SCRIPT -->
+<!-- May have to correct file path -->
+<script src="./assets/js/editor.js"></script>
+
+</body>
+</html>
